@@ -42,12 +42,12 @@ class PerangkatController extends Controller
         // ]);
 
         $request->validate([
-            'title' => 'required|max:20', 'description' => 'required|max:255', 'image' => 'required|image',
+            'title' => 'required|max:30', 'description' => 'required|max:40', 'image' => 'required|image',
         ], [
-            'description.max' => 'Deskripsi tidak boleh lebih dari 255 karakter',
             'image.required' => 'Gambar wajib diisi',
             'image.image' => 'File yang diupload bukan gambar',
-            'title.max' => 'Judul tidak boleh lebih dari 20 karakter',
+            'title.max' => 'Judul tidak boleh lebih dari 30 karakter',
+            'description.max' => 'Deskripsi tidak boleh lebih dari 40 karakter',
         ]);
 
         $input = $request->all();
@@ -96,8 +96,17 @@ class PerangkatController extends Controller
      */
     public function update(Request $request, Perangkat $perangkat)
     {
+        // $request->validate([
+        //     'title' => 'required', 'description' => 'required', 'image' => 'image',
+        // ]);
+
         $request->validate([
-            'title' => 'required', 'description' => 'required', 'image' => 'image',
+            'title' => 'required|max:30', 'description' => 'required|max:40', 'image' => 'required|image',
+        ], [
+            'image.required' => 'Gambar wajib diisi',
+            'image.image' => 'File yang diupload bukan gambar',
+            'title.max' => 'Judul tidak boleh lebih dari 30 karakter',
+            'description.max' => 'Deskripsi tidak boleh lebih dari 40 karakter',
         ]);
 
         $input = $request->all();

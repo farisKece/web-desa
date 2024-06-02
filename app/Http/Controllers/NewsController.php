@@ -42,11 +42,11 @@ class NewsController extends Controller
         // ]);
 
         $request->validate([
-            'title' => 'required|max:20', 'description' => 'required', 'image' => 'required|image',
+            'title' => 'required|max:255', 'description' => 'required', 'image' => 'required|image',
         ], [
             'image.required' => 'Gambar wajib diisi',
             'image.image' => 'File yang diupload bukan gambar',
-            'title.max' => 'Judul tidak boleh lebih dari 20 karakter',
+            'title.max' => 'Judul tidak boleh lebih dari 255 karakter',
         ]);
 
         $input = $request->all();
@@ -96,11 +96,11 @@ class NewsController extends Controller
     public function update(Request $request, News $news)
     {
         $request->validate([
-            'title' => 'required|max:20', 'description' => 'required', 'image' => 'required|image',
+            'title' => 'required|max:255', 'description' => 'required', 'image' => 'required|image',
         ], [
             'image.required' => 'Gambar wajib diisi',
             'image.image' => 'File yang diupload bukan gambar',
-            'title.max' => 'Judul tidak boleh lebih dari 20 karakter',
+            'title.max' => 'Judul tidak boleh lebih dari 255 karakter',
         ]);
 
         $input = $request->all();

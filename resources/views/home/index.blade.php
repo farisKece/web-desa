@@ -125,7 +125,12 @@
                 </div>
 
                 <div class="row">
-                    @foreach ($news as $news)
+                    @php
+                        $newsCollection = collect($news);
+                        $sortedNews = $newsCollection->sortByDesc('created_at');
+                        $newsSliced = $sortedNews->take(6);
+                    @endphp
+                    @foreach ($newsSliced as $news)
                         <div class="col-md-3 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
                             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                                 <div class="member-img">
@@ -253,7 +258,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Visi, Misi dan Motto</h2>
+                    <h2>Visi, Misi</h2>
                 </div>
 
                 <div class="row">
@@ -261,17 +266,17 @@
                         <div class="icon-box mt-5 mt-lg-0">
                             <i class="bx bx-receipt"></i>
                             <h4>Visi</h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                            <p>“ Terwujudnya Masyarakat Desa yang Religius, Cerdas, Berkarya, Bersinergi, Berteknologi,
+                                Sehat dan Bermutu. Bersiap menuju Desa Warungdowo Maju, Produktif dan Energik. “</p>
                         </div>
                         <div class="icon-box mt-5">
                             <i class="bx bx-cube-alt"></i>
                             <h4>Misi</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                        </div>
-                        <div class="icon-box mt-5">
-                            <i class="bx bx-images"></i>
-                            <h4>Motto</h4>
-                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                            <p>" Transparansi pemerintahan, pembangunan berkelanjutan, pelaksanaan program pemerintah,
+                                penguatan hubungan desa, pengelolaan profesional BUMDes, media digital untuk
+                                transparansi, peningkatan kualitas pemuda, masyarakat aman dan toleran, pengembangan
+                                ekonomi kreatif, produktivitas sektor ekonomi, pelestarian budaya, program RTLH adil,
+                                peningkatan PADes, dan pembangunan sarana olahraga. "</p>
                         </div>
                     </div>
                     <div class="image col-lg-6 order-1 order-lg-2"

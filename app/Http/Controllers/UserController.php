@@ -38,10 +38,21 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'name' => 'required',
+            'name' => 'required|max:40',
             'email' => 'required|email|unique:users',
-            'level' => 'required',
+            'level' => 'required|in:admin,superadmin',
             'password' => 'required|min:8',
+        ], [
+            'name.required' => 'Nama tidak boleh kosong',
+            'name.max' => 'Nama tidak boleh lebih dari 40 karakter',
+            'email.required' => 'Email tidak boleh kosong',
+            'email.unique' => 'Email sudah terdaftar',
+            'email.email' => 'Email tidak valid',
+            'level.required' => 'Level tidak boleh kosong',
+            'level.in' => 'Level tidak valid, harus bertipe admin atau superadmin',
+            'password.required' => 'Password tidak boleh kosong',
+            'password.min' => 'Password minimal 8 karakter',
+
         ]);
 
         $validatedData['password'] = bcrypt($validatedData['password']);
@@ -82,8 +93,21 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $request->validate([
-            'name' => 'required', 'email' => 'required','level' => 'required','password' => 'required',
+        $validatedData = $request->validate([
+            'name' => 'required|max:40',
+            'email' => 'required|email',
+            'level' => 'required|in:admin,superadmin',
+            'password' => 'required|min:8',
+        ], [
+            'name.required' => 'Nama tidak boleh kosong',
+            'name.max' => 'Nama tidak boleh lebih dari 40 karakter',
+            'email.required' => 'Email tidak boleh kosong',
+            'email.email' => 'Email tidak valid',
+            'level.required' => 'Level tidak boleh kosong',
+            'level.in' => 'Level tidak valid, harus bertipe admin atau superadmin',
+            'password.required' => 'Password tidak boleh kosong',
+            'password.min' => 'Password minimal 8 karakter',
+
         ]);
 
         $input = $request->all();

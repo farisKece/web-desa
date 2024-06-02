@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Desa Warungdowo - Sejarah Desa</title>
+    <title>Desa Warungdowo - Media Desa</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -100,10 +100,29 @@
                     <h2>Media Desa Warungdowo</h2>
                     <br />
                     <div class="member-img">
-                        <video width="400" height="300" controls>
-                            <source src="assets/video/Warungdowo.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div style="text-align: center;">
+                            <video width="550" height="450" controls style="display: inline-block;">
+                                <source src="assets/video/Warungdowo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="social-links mt-3">
+                            <a href="https://twitter.com/warungdowotv" target="_blank" class="twitter"
+                                style="color: white; background: linear-gradient(to right, #2596be, #2596be); padding: 5px; border-radius: 5px; display: inline-block; margin-right: 10px;">
+                                <i class="bx bxl-twitter" style="color: white; font-size: 25px; display: inline-block; vertical-align: middle;"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61556307601139" target="_blank"
+                                class="facebook"
+                                style="color: white; background: linear-gradient(to right, #2596be, #2596be); padding: 5px; border-radius: 5px; display: inline-block; margin-right: 10px;"><i
+                                    class="bx bxl-facebook" style="color: white; font-size: 25px; display: inline-block; vertical-align: middle;"></i></a>
+                            <a href="https://www.instagram.com/warungdowotv/" target="_blank" class="instagram"
+                                style="color: white; background: linear-gradient(to right, #2596be, #2596be); padding: 5px; border-radius: 5px; display: inline-block; margin-right: 10px;"><i
+                                    class="bx bxl-instagram" style="color: white; font-size: 25px; display: inline-block; vertical-align: middle;"></i></a>
+                            <a href="https://www.tiktok.com/@warungdowotv" target="_blank" class="google-plus"
+                                style="color: white; background: linear-gradient(to right, #2596be, #2596be); padding: 5px; border-radius: 5px; display: inline-block; margin-right: 10px;"><i
+                                    class="bx bxl-tiktok" style="color: white; font-size: 25px; display: inline-block; vertical-align: middle;"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -135,8 +154,8 @@
                                         class="bx bxl-twitter"></i></a>
                                 <a href="https://www.facebook.com/profile.php?id=61556307601139" target="_blank"
                                     class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="https://www.instagram.com/warungdowotv/" target="_blank" class="instagram"><i
-                                        class="bx bxl-instagram"></i></a>
+                                <a href="https://www.instagram.com/warungdowotv/" target="_blank"
+                                    class="instagram"><i class="bx bxl-instagram"></i></a>
                                 <a href="https://www.tiktok.com/@warungdowotv" target="_blank" class="google-plus"><i
                                         class="bx bxl-tiktok"></i></a>
                             </div>
