@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Desa Sumberkedawung - Pojok UMKM</title>
+  <title>Desa Warungdowo - Pojok UMKM</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -48,7 +48,8 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
+      <a href="{{ url('/') }}" class="logo me-0"><img src="assets/img/logo_kiri.png" alt=""></a>
+            <a href="{{ url('/') }}" class="logo me-auto"><img src="assets/img/logo_kanan.png" alt=""></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
@@ -60,7 +61,7 @@
               <li><a class="nav-link" href="/sejarah">Sejarah Desa</a></li>
               <li><a class="nav-link" href="/visimisi">Visi dan Misi</a></li>
               <li><a class="nav-link" href="/sotk">Struktur Organisasi dan Tata Kerja</a></li>
-              <li><a class="nav-link" href="/kelembagaan">Kelembagaan</a></li>
+              <li><a class="nav-link" href="/geografis">Kelembagaan</a></li>
               <li><a class="nav-link" href="/potensi">Potensi Desa</a></li>
               <li><a class="nav-link" href="/asetdesa">Aset Desa</a></li>
             </ul>
@@ -95,7 +96,7 @@
   <section id="services" class="services services">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>UMKM Desa Sumberkedawung</h2>
+          <h2>UMKM Desa Warungdowo</h2>
         </div>
         
         <div class="row">
@@ -121,19 +122,18 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Sumberkedawung</h3>
+              <h3>Desa Warungdowo</h3>
               <p>
-                Kec. Leces <br>
-                Kab. Probolinggo<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                Kec. Pohjentrek <br>
+                Kota. Pasuruan<br><br>
+                <strong>Info Pelayanan Desa:</strong> +62 851-8000-8125<br>
+                <strong>Email:</strong> Dwarungdowo@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://twitter.com/warungdowotv" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61556307601139" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/warungdowotv/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a> 
+                <a href="https://www.tiktok.com/@warungdowotv" target="_blank" class="google-plus"><i class="bx bxl-tiktok"></i></a>
               </div>
             </div>
           </div>

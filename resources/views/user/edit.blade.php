@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Layanan Desa Sumberkedawung')
+@section('title', 'Edit Layanan Desa Warungdowo')
 
 @section('content')
 
@@ -13,31 +13,30 @@
                 @csrf
                 <div class="form-group">
                     <label for="">Name</label>
-                    <input type="text" class="form-control" name="name" placeholder="Nama" value="{{$user->name}}">
+                    <input type="text" class="form-control" name="name" placeholder="Nama" value="{{old('name', $user->name)}}">
                 </div>
                 @error('name')
+                <small style="color:red">{{$message}}</small>
+                @enderror
                 <div class="form-group">
                     <label for="">Level</label>
-                    <input type="text" class="form-control" name="name" placeholder="Nama" value="{{$user->level}}">
+                    <input type="text" class="form-control" name="level" placeholder="Level" value="{{old('level', $user->level)}}">
                 </div>
-                 @error('Level')
+                @error('level')
                 <small style="color:red">{{$message}}</small>
                 @enderror
-                <small style="color:red">{{$message}}</small>
-                @enderror
-                 <div class="form-group">
+                <div class="form-group">
                     <label for="">Email</label>
-                    <input type="text" class="form-control" name="name" placeholder="Email" value="{{$user->email}}">{{$user->email}}
+                    <input type="text" class="form-control" name="email" placeholder="Email" value="{{old('email', $user->email)}}">
                 </div>
-                 @error('email')
+                @error('email')
                 <small style="color:red">{{$message}}</small>
                 @enderror
-                
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input type="text" class="form-control" name="name" placeholder="Nama" value="{{$user->password}}">
+                    <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
-                 @error('password')
+                @error('password')
                 <small style="color:red">{{$message}}</small>
                 @enderror
                 <div class="form-group">

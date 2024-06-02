@@ -82,4 +82,11 @@ class HomeController extends Controller
         ));
     }
 
+    public function newsdetail($id){
+        $news = News::find($id);
+        return view('home.newsdetail',compact(
+            'news',
+        ));
+    }
+
 }

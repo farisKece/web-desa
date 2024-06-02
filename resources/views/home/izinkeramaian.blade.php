@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Desa Sumberkedawung | IZIN KERAMAIAN</title>
+    <title>Desa Warungdowo | IZIN KERAMAIAN</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/logo_kiri.png" rel="icon">
+    <link href="assets/img/logo_kiri.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -43,7 +43,8 @@
     <header id="header" class="top">
         <div class="container d-flex align-items-center">
 
-            <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
+            <a href="{{ url('/') }}" class="logo me-0"><img src="assets/img/logo_kiri.png" alt=""></a>
+            <a href="{{ url('/') }}" class="logo me-auto"><img src="assets/img/logo_kanan.png" alt=""></a>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
@@ -55,7 +56,7 @@
               <li><a class="nav-link" href="/sejarah">Sejarah Desa</a></li>
               <li><a class="nav-link" href="/visimisi">Visi dan Misi</a></li>
               <li><a class="nav-link" href="/sotk">Struktur Organisasi dan Tata Kerja</a></li>
-              <li><a class="nav-link" href="/kelembagaan">Kelembagaan</a></li>
+              <li><a class="nav-link" href="/geografis">Kelembagaan</a></li>
               <li><a class="nav-link" href="/potensi">Potensi Desa</a></li>
               <li><a class="nav-link" href="/asetdesa">Aset Desa</a></li>
             </ul>
@@ -105,18 +106,18 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <h3>Sumberkedawung</h3>
+                            <h3>Desa Warungdowo</h3>
                             <p>
                                 Kec. Leces <br>
                                 Kab. Probolinggo<br><br>
                                 <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                <strong>Email:</strong> Dwarungdowo@gmail.com<br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="https://www.instagram.com/warungdowotv/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a> 
+                                <a href="#" class="google-plus"><i class="bx bxl-tiktok"></i></a>
                                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>

@@ -54,7 +54,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
            <li class="nav-item">
-            <a href="dashboard" class="nav-link">
+            <a href="/dashboard" class="nav-link">
              <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -83,36 +83,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Berita</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="/admin/sambutan" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sambutan</p>
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> --}}
+              {{-- <li class="nav-item">
                 <a href="/admin/data" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Desa</p>
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> --}}
+              {{-- <li class="nav-item">
                 <a href="/admin/services" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Services</p>
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> --}}
+              {{-- <li class="nav-item">
                 <a href="/admin/umkm" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                  <p>UMKM</p> 
                 </a>
-              </li>
-              <li class="nav-item">
+              </li> --}}
+              {{-- <li class="nav-item">
                 <a href="/admin/testimoni" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Testimoni</p>
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
                 <a href="/admin/perangkat" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -125,12 +125,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>Galery</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="/admin/event" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Event</p>
                 </a>
-              </li>
+              </li> --}}
             </ul>
           </li>
           @if(auth()->user()->level=="superadmin")
@@ -231,5 +231,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="/lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/lte/dist/js/adminlte.min.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+<script>
+  ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .then( editor => {
+                  console.log( editor );
+          } )
+          .catch( error => {
+                  console.error( error );
+          } );
+</script>
 </body>
 </html>

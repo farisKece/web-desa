@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Data Perangkat Desa Sumberkedawung')
+@section('title','Data Perangkat Desa Warungdowo')
 
 @section('content')
 

@@ -37,15 +37,18 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required',  'email' => 'required','level' => 'required','password' => 'required',
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:users',
+            'level' => 'required',
+            'password' => 'required|min:8',
         ]);
 
-        $input = $request->all();
-       
-        User::create($input);
+        $validatedData['password'] = bcrypt($validatedData['password']);
 
-        return redirect('admin/user')->with('message', 'Data berhasil ditambahkan');
+        User::create($validatedData);
+
+        return redirect('admin/user')->with('success', 'Data berhasil ditambahkan');
     }
 
     /**
@@ -80,11 +83,12 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         $request->validate([
-           'name' => 'required', 'email' => 'required','level' => 'required','password' => 'required',
+            'name' => 'required', 'email' => 'required','level' => 'required','password' => 'required',
         ]);
 
         $input = $request->all();
-        
+        $input['password'] = bcrypt($input['password']);
+
         $user->update($input);
 
         return redirect('admin/user')->with('message', 'Data berhasil diedit');

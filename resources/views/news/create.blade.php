@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tambah Data Berita Desa Sumberkedawung')
+@section('title', 'Tambah Data Berita Desa Warungdowo')
 
 @section('content')
 
@@ -19,7 +19,7 @@
                 @enderror
                  <div class="form-group">
                     <label for="">Deskripsi</label>
-                    <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi"></textarea>
+                    <textarea name="description" id="editor" cols="30" rows="10" class="form-control" placeholder="Deskripsi"></textarea>
                 </div>
                  @error('description')
                 <small style="color:red">{{$message}}</small>

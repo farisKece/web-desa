@@ -5,16 +5,18 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Desa Sumberkedawung | PINDAH DOMISILI</title>
+    <title>Desa Warungdowo | PINDAH DOMISILI</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/logo_kiri.png" rel="icon">
+    <link href="assets/img/logo_kiri.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -43,43 +45,45 @@
     <header id="header" class="top">
         <div class="container d-flex align-items-center">
 
-            <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
+            <a href="{{ url('/') }}" class="logo me-0"><img src="assets/img/logo_kiri.png" alt=""></a>
+            <a href="{{ url('/') }}" class="logo me-auto"><img src="assets/img/logo_kanan.png" alt=""></a>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
 
             <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto" href="/">HOME</a></li>
-          <li class="dropdown"><a href="/profil"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a class="nav-link" href="/sejarah">Sejarah Desa</a></li>
-              <li><a class="nav-link" href="/visimisi">Visi dan Misi</a></li>
-              <li><a class="nav-link" href="/sotk">Struktur Organisasi dan Tata Kerja</a></li>
-              <li><a class="nav-link" href="/kelembagaan">Kelembagaan</a></li>
-              <li><a class="nav-link" href="/potensi">Potensi Desa</a></li>
-              <li><a class="nav-link" href="/asetdesa">Aset Desa</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="/datadesa">Data Desa</a></li>
-          <li class="dropdown"><a href="/informasi"><span>INFORMASI LAYANAN</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="/ktp">Pembuatan KTP</a></li>
-              <li><a href="/kk">Pembuatan KK</a></li>
-              <li><a href="/aktekelahiran">Pembuatan Akte Kelahiran</a></li>
-              <li><a href="/aktekematian">Pembuatan Akte Kematian</a></li>
-              <li><a href="/pindahdomisili">Prosedur Pindah Domisili</a></li>
-              <li><a href="/izinkeramaian">Pembuatan Surat Izin Keramaian</a></li>
-              <li><a href="http://bphtb.probolinggokab.go.id/" target="_blank">Cek PBB</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="/event">EVENT</a></li>
-          <li><a class="nav-link scrollto" href="/berita">BERITA</a></li>
-          <li><a class="nav-link scrollto" href="/galeri">GALERI</a></li>
-          <li><a class="nav-link scrollto" href="/umkm">POJOK UMKM</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-      
+                <ul>
+                    <li><a class="nav-link scrollto" href="/">HOME</a></li>
+                    <li class="dropdown"><a href="/profil"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a class="nav-link" href="/sejarah">Sejarah Desa</a></li>
+                            <li><a class="nav-link" href="/visimisi">Visi dan Misi</a></li>
+                            <li><a class="nav-link" href="/sotk">Struktur Organisasi dan Tata Kerja</a></li>
+                            <li><a class="nav-link" href="/geografis">Kelembagaan</a></li>
+                            <li><a class="nav-link" href="/potensi">Potensi Desa</a></li>
+                            <li><a class="nav-link" href="/asetdesa">Aset Desa</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="/datadesa">Data Desa</a></li>
+                    <li class="dropdown"><a href="/informasi"><span>INFORMASI LAYANAN</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="/ktp">Pembuatan KTP</a></li>
+                            <li><a href="/kk">Pembuatan KK</a></li>
+                            <li><a href="/aktekelahiran">Pembuatan Akte Kelahiran</a></li>
+                            <li><a href="/aktekematian">Pembuatan Akte Kematian</a></li>
+                            <li><a href="/pindahdomisili">Prosedur Pindah Domisili</a></li>
+                            <li><a href="/izinkeramaian">Pembuatan Surat Izin Keramaian</a></li>
+                            <li><a href="http://bphtb.probolinggokab.go.id/" target="_blank">Cek PBB</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="/event">EVENT</a></li>
+                    <li><a class="nav-link scrollto" href="/berita">BERITA</a></li>
+                    <li><a class="nav-link scrollto" href="/galeri">GALERI</a></li>
+                    <li><a class="nav-link scrollto" href="/umkm">POJOK UMKM</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
         </div>
     </header><!-- End Header -->
 
@@ -93,7 +97,8 @@
         <ul>
             <li>Surat pengantar dari RT/RW setempat</li>
             <li>Fotokopi KTP & KK</li>
-            <li>Fotokopi Akta Perkawinan/Surat Nikah atau akta perceraian (bagi yang berstatus kawin atau cerai hidup)</li>
+            <li>Fotokopi Akta Perkawinan/Surat Nikah atau akta perceraian (bagi yang berstatus kawin atau cerai hidup)
+            </li>
             <li>Fotokopi Akta Kelahiran</li>
         </ul>
     </div>
@@ -107,45 +112,51 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <h3>Sumberkedawung</h3>
+                            <h3>Desa Warungdowo</h3>
                             <p>
                                 Kec. Leces <br>
                                 Kab. Probolinggo<br><br>
                                 <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                <strong>Email:</strong> Dwarungdowo@gmail.com<br>
                             </p>
                             <div class="social-links mt-3">
                                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="https://www.instagram.com/warungdowotv/" target="_blank" class="instagram"><i
+                                        class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-tiktok"></i></a>
                                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
 
-        <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/beranda">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/profil">Profil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/informasi">Informasi Layanan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/berita">Berita</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/galeri">Galeri</a></li>
-            </ul>
-          </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/beranda">Beranda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/profil">Profil</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/informasi">Informasi Layanan</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/berita">Berita</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/galeri">Galeri</a></li>
+                        </ul>
+                    </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Layanan Desa</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/kk">Pembuatan KTP</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/ktp">Pembuatan Kartu Keluarga</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/aktekelahiran">Pembuatan Akte Kelahiran</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/aktekematian">Pembuatan Akte Kematian</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/pindahdomisili">Prosedur Pindah Domisili</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/izinkeramaian">Pembuatan Surat Izin Keramaian</a></li>
-            </ul>
-          </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Layanan Desa</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/kk">Pembuatan KTP</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/ktp">Pembuatan Kartu Keluarga</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/aktekelahiran">Pembuatan Akte
+                                    Kelahiran</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/aktekematian">Pembuatan Akte
+                                    Kematian</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/pindahdomisili">Prosedur Pindah
+                                    Domisili</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/izinkeramaian">Pembuatan Surat Izin
+                                    Keramaian</a></li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -165,7 +176,8 @@
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

@@ -43,8 +43,8 @@ CREATE TABLE `data` (
 INSERT INTO `data` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
 (1, '85000', 'Luas wilayah desa sumber kedawung', 'service.png', '2022-12-21 05:04:32', '2022-12-21 05:04:32'),
 (2, '26', 'Jumlah Kartu Keluarga di desa dumber kedawung', 'service.png', '2022-12-21 05:05:27', '2022-12-21 05:05:27'),
-(3, '150', 'Jumla Penduduk di desa Sumberkedawung', 'service.png', '2022-12-21 05:06:00', '2022-12-21 05:06:00'),
-(4, '10', 'Prestasi desa Sumberkedawung', 'service.png', '2022-12-21 05:06:32', '2022-12-21 05:06:32');
+(3, '150', 'Jumla Penduduk di Desa Warungdowo', 'service.png', '2022-12-21 05:06:00', '2022-12-21 05:06:00'),
+(4, '10', 'Prestasi Desa Warungdowo', 'service.png', '2022-12-21 05:06:32', '2022-12-21 05:06:32');
 
 -- --------------------------------------------------------
 
@@ -161,7 +161,7 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Hidup Sehat bersama Kedawung', 'Perayaan lomba pacu kuda untuk kesehatan massyarakat desa Sumberkedawung', 'slide2-01.jpg', '2022-12-21 05:08:44', '2022-12-21 05:08:44'),
+(1, 'Hidup Sehat bersama Kedawung', 'Perayaan lomba pacu kuda untuk kesehatan massyarakat Desa Warungdowo', 'slide2-01.jpg', '2022-12-21 05:08:44', '2022-12-21 05:08:44'),
 (2, 'Ramaikan Lomba Catur', 'Ayo dulur dulur gabung lomba catur, sambung silaturahmi bersama warga kedawung', 'Desa - Catur-5 (1).jpg', '2022-12-21 05:50:39', '2022-12-21 05:51:12');
 
 -- --------------------------------------------------------
@@ -240,7 +240,7 @@ CREATE TABLE `sambutans` (
 --
 
 INSERT INTO `sambutans` (`id`, `title`, `description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Selamat Hari Raya Natal dan Tahun Baru', 'Assalamualaikum wr.wb \r\nTidak terasa saat ini kita sudah ada di puncak tahun 2022. Saya segenap Kepala Desa Sumberkedawung mengucapkan Selamat Hari Raya Natal dan Tahun Baru 2023, semoga apa yang kita laksanakan pada tahun ini selalu berkah .', 'IMG_20221221_102521.png', '2022-12-21 10:59:09', '2022-12-21 10:59:09');
+(1, 'Selamat Hari Raya Natal dan Tahun Baru', 'Assalamualaikum wr.wb \r\nTidak terasa saat ini kita sudah ada di puncak tahun 2022. Saya segenap Kepala Desa Warungdowo mengucapkan Selamat Hari Raya Natal dan Tahun Baru 2023, semoga apa yang kita laksanakan pada tahun ini selalu berkah .', 'IMG_20221221_102521.png', '2022-12-21 10:59:09', '2022-12-21 10:59:09');
 
 -- --------------------------------------------------------
 
